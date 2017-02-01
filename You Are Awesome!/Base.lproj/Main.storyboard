@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="You_Are_Awesome_" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lGp-Zk-UoW">
+                                <rect key="frame" x="243" y="139" width="117" height="30"/>
+                                <state key="normal" title="Show Message"/>
+                                <connections>
+                                    <action selector="messageButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="my2-LL-F5H"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image1" translatesAutoresizingMaskIntoConstraints="NO" id="U2D-9c-j55">
+                                <rect key="frame" x="16" y="195" width="343" height="372"/>
+                            </imageView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="thh-Lc-GLI">
+                                <rect key="frame" x="115" y="139" width="51" height="31"/>
+                                <connections>
+                                    <action selector="soundSwitchPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="kgo-hT-zNM"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Play Sound:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x0i-1S-E45">
+                                <rect key="frame" x="16" y="144" width="91" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N6z-kG-6u5">
+                                <rect key="frame" x="16" y="28" width="344" height="81"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="81" id="y9j-q1-jhj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="23"/>
+                                <color key="textColor" red="0.10196078431372549" green="0.5607843137254902" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="x0i-1S-E45" firstAttribute="leading" secondItem="U2D-9c-j55" secondAttribute="leading" id="2ro-C9-DgQ"/>
+                            <constraint firstItem="N6z-kG-6u5" firstAttribute="trailing" secondItem="lGp-Zk-UoW" secondAttribute="trailing" id="5ER-4V-zh4"/>
+                            <constraint firstItem="x0i-1S-E45" firstAttribute="centerY" secondItem="thh-Lc-GLI" secondAttribute="centerY" id="8ow-6H-DGN"/>
+                            <constraint firstItem="thh-Lc-GLI" firstAttribute="centerY" secondItem="lGp-Zk-UoW" secondAttribute="centerY" id="DOF-yd-t7y"/>
+                            <constraint firstItem="N6z-kG-6u5" firstAttribute="leading" secondItem="x0i-1S-E45" secondAttribute="leading" id="E6W-5k-AWF"/>
+                            <constraint firstItem="thh-Lc-GLI" firstAttribute="top" secondItem="N6z-kG-6u5" secondAttribute="bottom" constant="30" id="Rth-kF-zL0"/>
+                            <constraint firstItem="N6z-kG-6u5" firstAttribute="centerX" secondItem="U2D-9c-j55" secondAttribute="centerX" id="Sko-Rd-V0j"/>
+                            <constraint firstItem="lGp-Zk-UoW" firstAttribute="leading" secondItem="thh-Lc-GLI" secondAttribute="trailing" constant="79" id="dNy-RI-d5W"/>
+                            <constraint firstItem="N6z-kG-6u5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="f4N-MW-ROj"/>
+                            <constraint firstItem="thh-Lc-GLI" firstAttribute="top" secondItem="lGp-Zk-UoW" secondAttribute="top" id="fh4-gO-c0v"/>
+                            <constraint firstItem="U2D-9c-j55" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="g8r-pY-C84"/>
+                            <constraint firstItem="N6z-kG-6u5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="gsE-MD-T8h"/>
+                            <constraint firstItem="U2D-9c-j55" firstAttribute="top" secondItem="thh-Lc-GLI" secondAttribute="bottom" constant="25" id="i0P-A1-qKg"/>
+                            <constraint firstItem="thh-Lc-GLI" firstAttribute="leading" secondItem="x0i-1S-E45" secondAttribute="trailing" constant="8" symbolic="YES" id="jw3-bT-bGy"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="U2D-9c-j55" secondAttribute="bottom" constant="100" id="uBc-Vc-w1V"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="awesomeImage" destination="U2D-9c-j55" id="qDr-Ld-d5A"/>
+                        <outlet property="messageButton" destination="lGp-Zk-UoW" id="0uc-VX-Etg"/>
+                        <outlet property="messageLabel" destination="N6z-kG-6u5" id="q8u-af-Rxc"/>
+                        <outlet property="soundSwitch" destination="thh-Lc-GLI" id="yNx-Ah-E4V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="-90.404797601199405"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image1" width="564" height="564"/>
+    </resources>
+</document>
